@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System transversal — Fabio Rodríguez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Fabio Rodríguez<span class="punto">.</span></a>
+      <button class="menu-toggle" onclick="toggleMenu()" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="nav-menu">
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="index.html#proyectos">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="proyecto">
+    <div class="proyecto-inner">
+
+      <div class="proyecto-header">
+        <p class="breadcrumb">Inicio · Proyectos · Design System</p>
+        <h1>Design System transversal para el ecosistema digital del Grupo Bolívar</h1>
+      </div>
+
+      <div class="proyecto-meta">
+        <div><span>Fecha</span><strong>2022/2023</strong></div>
+        <div><span>Cliente</span><strong>Seguros Bolívar y Jelpit</strong></div>
+        <div><span>Plataforma</span><strong>Web</strong></div>
+        <div><span>Rol</span><strong>Product Designer</strong></div>
+        <div><span>Enlace</span><strong><a href="https://theme-builder-e2465.web.app/" target="_blank">Biblioteca de componentes</a></strong></div>
+      </div>
+
+      <div class="proyecto-contenido">
+
+        <section>
+          <h2>El proyecto</h2>
+          <p>El Grupo Bolívar necesitaba unificar la forma en que sus marcas digitales — Seguros Bolívar, Servicios Bolívar, Jelpit, Ciencuadras y Dr. Aki — diseñaban y construían interfaces. Cada equipo trabajaba de forma independiente, generando inconsistencias visuales, deuda técnica y duplicación de esfuerzos. La solución fue un Design System transversal: una base común en escala de grises con tokens que se "pintaban" con los colores de cada marca, permitiendo que todos los equipos contribuyeran y consumieran desde un mismo sistema.</p>
+        </section>
+
+        <section>
+          <h2>Cómo funcionaba</h2>
+          <p>El sistema se construyó siguiendo los principios de Atomic Design — átomos, moléculas y organismos — combinados con patrones de componentes de Angular y reglas propias de accesibilidad y usabilidad. La base era una biblioteca en escala de grises, marca blanca, que cada equipo adaptaba aplicando los tokens de color de su marca. Los diseñadores de todos los equipos contribuían a construir componentes, y el equipo de desarrollo los mantenía en una biblioteca en línea disponible para consulta y uso permanente.</p>
+        </section>
+
+        <section>
+          <h2>Mi rol</h2>
+          <p>Fui diseñador contribuidor del equipo central — participé en la conceptualización del sistema transversal, la lógica de marca blanca, la definición de tokens y la construcción de componentes del sistema base.</p>
+          <p>Adicionalmente representé a Jelpit Conjuntos, identificando y construyendo los componentes específicos que el producto SaaS necesitaba: zona privada, consulta y gestión de transacciones, estados de cuenta y servicios de administración de propiedad horizontal.</p>
+        </section>
+
+      </div>
+
+      <!-- EL SISTEMA EN NÚMEROS -->
+      <div class="resultados-wrapper">
+        <p style="font-size: 14px; color: #6B7280; margin-bottom: 0.75rem;">Cifras del sistema transversal completo, construido por todo el equipo:</p>
+        <div class="resultados-grid resultados-grid--4">
+          <div class="resultado-card">
+            <p class="resultado-numero">+ 200</p>
+            <p class="resultado-label">Estilos</p>
+          </div>
+          <div class="resultado-card">
+            <p class="resultado-numero">26</p>
+            <p class="resultado-label">Átomos</p>
+          </div>
+          <div class="resultado-card">
+            <p class="resultado-numero">18</p>
+            <p class="resultado-label">Moléculas</p>
+          </div>
+          <div class="resultado-card">
+            <p class="resultado-numero">5</p>
+            <p class="resultado-label">Organismos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto-contenido">
+
+        <section>
+          <h2>La solución</h2>
+          <p>Las imágenes muestran dos capas del sistema: la base transversal en escala de grises, compartida por todas las marcas, y su implementación específica para Jelpit — con los tokens de color, componentes y patrones propios del producto.</p>
+
+          <h4>El sistema en marca blanca / escala de grises</h4>
+
+          <div class="row-imagen">
+            <section class="proyecto-imagen">
+              <img src="img/design-system/01-colors.png" alt="Design System marca blanca">
+              <p>Colores — Escala de grises</p>
+            </section>
+            <section class="proyecto-imagen">
+              <img src="img/design-system/02-shadows.png" alt="Design System marca blanca">
+              <p>Sombras — Transversal</p>
+            </section>
+            <section class="proyecto-imagen">
+              <img src="img/design-system/03-typo.png" alt="Design System marca blanca">
+              <p>Tipografía — Estilos</p>
+            </section>
+          </div>
+
+          <div class="row-imagen">
+            <section class="proyecto-imagen">
+              <img src="img/design-system/04-icons.png" alt="Design System marca blanca">
+              <p>Iconos — Anatomía, uso y construcción</p>
+            </section>
+            <section class="proyecto-imagen">
+              <img src="img/design-system/05-states.png" alt="Design System marca blanca">
+              <p>Estados de botón — Escala de grises</p>
+            </section>
+            <section class="proyecto-imagen">
+              <img src="img/design-system/06-input.png" alt="Design System marca blanca">
+              <p>Input de texto — Variaciones y esqueleto</p>
+            </section>
+          </div>
+
+          <h4>Implementación en Jelpit</h4>
+
+          <div class="row-imagen">
+            <section class="proyecto-imagen">
+              <img src="img/design-system/07-brand.png" alt="Design System Jelpit">
+              <p>Marca — Usos, anatomía y esqueleto</p>
+            </section>
+            <section class="proyecto-imagen">
+              <img src="img/design-system/08-colors.png" alt="Design System Jelpit">
+              <p>Colores — Uso, buenas prácticas y reglamentación</p>
+            </section>
+            <section class="proyecto-imagen">
+              <img src="img/design-system/09-states.png" alt="Design System Jelpit">
+              <p>Estados de botón — Mobile y Desktop</p>
+            </section>
+          </div>
+
+          <div class="row-imagen">
+            <section class="proyecto-imagen">
+              <img src="img/design-system/10-buttons.png" alt="Design System Jelpit">
+              <p>Botones — Uso, anatomía y construcción</p>
+            </section>
+            <section class="proyecto-imagen">
+              <img src="img/design-system/11-states-button.png" alt="Design System Jelpit">
+              <p>Todos los estados y variaciones del botón</p>
+            </section>
+            <section class="proyecto-imagen">
+              <img src="img/design-system/12-paginator.png" alt="Design System Jelpit">
+              <p>Componentes complejos y específicos de la marca</p>
+            </section>
+          </div>
+
+        </section>
+
+      </div>
+
+      <div class="proyecto-quote">
+        <img src="img/comillas.png" alt="comillas" style="width: 72px;">
+        <h3>Un sistema de diseño construido para crecer con el ecosistema — una base común que unificó la forma de diseñar y desarrollar interfaces para 4 marcas del Grupo Bolívar.</h3>
+      </div>
+
+      <div class="proyecto-cta">
+        <a href="index.html#proyectos" class="btn">← Ver todos los proyectos</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Fabio Rodríguez</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      const btn = document.getElementById('menu-btn');
+      menu.classList.toggle('abierto');
+      btn.classList.toggle('activo');
+    }
+  </script>
+
+</body>
+</html>

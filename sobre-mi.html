@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mí — Fabio Rodríguez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Fabio Rodríguez<span class="punto">.</span></a>
+      <button class="menu-toggle" onclick="toggleMenu()" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="nav-menu">
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="index.html#proyectos">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SOBRE MÍ -->
+  <section class="sobre-mi">
+    <div class="sobre-mi-inner">
+
+      <div class="sobre-mi-foto">
+        <img src="img/foto.png" alt="Fabio Rodríguez">
+      </div>
+
+      <div class="sobre-mi-texto">
+        <h1>Soy Fabio Rodríguez</h1>
+        <p><strong>Diseño productos digitales que las personas entienden y las empresas pueden hacer crecer.</strong></p>
+        <p>Soy Product Designer con 8 años de experiencia en investigación, análisis de datos y diseño de interfaces para mejorar la experiencia y el desempeño de productos digitales. He participado en la estrategia, diseño y evolución de productos en entornos fintech, banca y SaaS, siempre con un enfoque en comprender a los usuarios, tomar decisiones basadas en evidencia y construir soluciones claras y útiles.</p>
+        <p>También llevo 10 años enseñando diseño — una práctica que ha afinado mi capacidad para comunicar decisiones complejas con claridad, tanto a equipos de desarrollo como a stakeholders de negocio.</p>
+        <p>En mi tiempo libre me gusta montar en bicicleta, cocinar y aprender sobre ciencia, creatividad y cultura.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Fabio Rodríguez</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      const btn = document.getElementById('menu-btn');
+      menu.classList.toggle('abierto');
+      btn.classList.toggle('activo');
+    }
+  </script>
+
+</body>
+</html>

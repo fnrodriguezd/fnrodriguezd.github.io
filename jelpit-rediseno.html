@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flujo de pagos rediseñado — Fabio Rodríguez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Fabio Rodríguez<span class="punto">.</span></a>
+      <button class="menu-toggle" onclick="toggleMenu()" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="nav-menu">
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="index.html#proyectos">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="proyecto">
+    <div class="proyecto-inner">
+
+      <div class="proyecto-header">
+        <p class="breadcrumb">Inicio · Proyectos · Jelpit Rediseño</p>
+        <h1>Flujo de pagos rediseñado: -45% en tiempo y arquitectura reutilizable</h1>
+      </div>
+
+      <div class="proyecto-meta">
+        <div><span>Fecha</span><strong>Enero 2023</strong></div>
+        <div><span>Cliente</span><strong>Servicios Bolívar y Davivienda</strong></div>
+        <div><span>Plataforma</span><strong>Web</strong></div>
+        <div><span>Rol</span><strong>Product Designer</strong></div>
+        <div><span>Enlace</span><strong><a href="https://web-conjuntos.jelpit.com/pagar-mi-administracion#/" target="_blank">Flujo de pago</a></strong></div>
+      </div>
+
+      <!-- IMPACTO -->
+      <div class="resultados-wrapper">
+        <div class="resultados-grid">
+          <div class="resultado-card">
+            <p class="resultado-label">Tiempo de pago</p>
+            <p class="resultado-numero">- 45 %</p>
+            <p class="resultado-detalle">Tiempo de pago: 2.2 min a 1.2 min</p>
+          </div>
+          <div class="resultado-card resultado-card--texto">
+            <p class="resultado-label">Arquitectura personalizable</p>
+            <p class="resultado-texto">Micro-front end reutilizable</p>
+          </div>
+          <div class="resultado-card resultado-card--texto">
+            <p class="resultado-label">Reducción de errores</p>
+            <p class="resultado-texto">Mensajes e información clara</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto-contenido">
+
+        <section>
+          <h2>El reto</h2>
+          <p>Jelpit Conjuntos había evolucionado como producto — pero su flujo de pago no. La tecnología era obsoleta, impedía implementar el design system actualizado y generaba quejas constantes por lentitud, errores y pasos excesivos. Al mismo tiempo, Davivienda — socio estratégico de Jelpit — exigía mantener un NPS alto como condición del acuerdo comercial. El reto era rediseñar el flujo de pago completamente, sobre una arquitectura moderna y personalizable que pudiera adaptarse a otros clientes y escenarios de negocio.</p>
+        </section>
+
+        <section>
+          <h2>Qué estaba pasando</h2>
+          <p>El flujo de pago acumulaba problemas estructurales que la investigación y la analítica hacían evidentes:</p>
+          <ul>
+            <li>Sin buscador dinámico — los usuarios no podían encontrar su conjunto de forma ágil</li>
+            <li>Resultados de búsqueda sin información suficiente para resolver ambigüedades de ciudad, dirección o nombre</li>
+            <li>Sin pantalla de verificación — los usuarios no podían confirmar ni corregir su información antes de pagar</li>
+            <li>Referencias de pago en pantalla separada — generando pagos a inmuebles equivocados</li>
+            <li>Pasos excesivos que hacían el proceso lento y frustrante</li>
+            <li>Sin adaptabilidad a los distintos flujos de uso de los administradores</li>
+            <li>Lenguaje técnico y de negocio que no correspondía a cómo los usuarios nombraban las cosas</li>
+            <li>Deuda técnica acumulada que impedía implementar el design system y mejoras de accesibilidad y escalabilidad</li>
+          </ul>
+          <p>Desde el negocio había presiones adicionales:</p>
+          <ul>
+            <li>Davivienda exigía mantener un NPS alto como condición del acuerdo comercial</li>
+            <li>Se necesitaba una arquitectura personalizable para expandir el flujo a otros clientes y escenarios — colegios, asociaciones, arriendos — con posibilidad de adaptar colores y contenidos por marca</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Cómo investigamos</h2>
+          <p>Este rediseño se apoyó en más de un año de investigación acumulada y en estudios específicos para este proyecto:</p>
+          <ul>
+            <li>Seguimiento continuo de datos en Google Analytics, Microsoft Clarity y tableros de Looker y BI para identificar patrones de uso, abandonos y fricciones</li>
+            <li>Entrevistas profundas con residentes y administradores — no solo sobre flujos de uso sino sobre todas las problemáticas a las que se enfrentaban en su día a día con el producto</li>
+            <li>Jobs To Be Done para entender qué necesitaban lograr los usuarios en cada momento del flujo</li>
+            <li>Análisis heurístico del flujo existente</li>
+            <li>Investigación externa contratada a Kantar para validar hallazgos</li>
+            <li>Tree testing y ejercicios de nomenclatura para definir el lenguaje correcto — por ejemplo, cómo nombrar el número de referencia para abarcar todos los casos: apartamento, casa, local o referencia</li>
+            <li>Pruebas de usabilidad en Useberry antes de cualquier implementación</li>
+            <li>Pruebas controladas con clientes seleccionados antes del lanzamiento masivo — una marcha blanca para validar la solución en contexto real</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Cómo tomamos decisiones</h2>
+          <p>Cada decisión de diseño tuvo un origen claro en la investigación o en los datos:</p>
+          <ul>
+            <li>Reducir pasos — la analítica mostraba que cada paso adicional aumentaba el abandono</li>
+            <li>Agregar pantalla de verificación — las entrevistas revelaron que los errores generaban desconfianza y llamadas al servicio al cliente</li>
+            <li>Buscador dinámico con especificación de nombre, dirección, ciudad y número de convenio, para resolver ambigüedades de nombre de conjunto</li>
+            <li>Permitir correcciones en cualquier punto del flujo</li>
+            <li>Sistema flexible adaptado a los distintos flujos de uso de los administradores</li>
+            <li>Lenguaje de los usuarios — validado con tree testing y ejercicios de nomenclatura</li>
+            <li>Implementación correcta del Design System — para garantizar consistencia visual, acelerar el desarrollo y construir sobre una base escalable</li>
+            <li>Arquitectura de microfront-end personalizable para escalar a otros clientes y marcas</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Mi rol</h2>
+          <p>Product Designer responsable del proceso completo — desde la investigación y el análisis de datos hasta el diseño del flujo, el UX Writing y la validación con usuarios. Fui quien identificó y documentó los problemas del flujo existente, lo que derivó en la decisión técnica de migrar a un microfront-end. Trabajé de forma transversal con equipos de negocio, tecnología y el equipo de Davivienda, y acompañé el proceso hasta las pruebas controladas previas al lanzamiento.</p>
+        </section>
+
+        <section>
+          <h2>La solución</h2>
+          <p>Migramos a una arquitectura de microfront-end sobre Angular, implementamos el Design System correctamente y rediseñamos cada pantalla del flujo basándonos en los hallazgos de la investigación. El objetivo era un flujo más rápido, más claro y personalizable para otros clientes y marcas.</p>
+
+          <h4>Búsqueda y selección del conjunto y el inmueble</h4>
+
+          <div class="row-imagen">
+            <section class="proyecto-imagen">
+              <p>Pantalla inicial — Acciones principales y contexto para iniciar el flujo de pago</p>
+              <img src="img/jelpit-rediseno/01-pantalla-inicial.png" alt="Pantalla inicial">
+            </section>
+            <section class="proyecto-imagen">
+              <p>Búsqueda y selección de conjunto — Con información suficiente para resolver ambigüedades</p>
+              <img src="img/jelpit-rediseno/02-busqueda.png" alt="Búsqueda de conjunto">
+            </section>
+            <section class="proyecto-imagen">
+              <p>Identificación del inmueble — Opciones definidas por la administración, con manejo de errores integrado</p>
+              <img src="img/jelpit-rediseno/03-inmueble.png" alt="Identificación del inmueble">
+            </section>
+            <section class="proyecto-imagen">
+              <p>Búsqueda por número — Con información completa para reconocer la referencia.</p>
+              <img src="img/jelpit-rediseno/04-inmuble.png" alt="">
+            </section>
+          </div>
+
+          <h4>Verificación y confirmación de los datos del conjunto y la referencia de pago</h4>
+
+          <div class="row-imagen">
+            <section class="proyecto-imagen">
+              <p>Verificación de los datos en selección — En un primer paso, se verifican los datos del conjunto y la referencia de pago apenas se seleccionan</p>
+              <img src="img/jelpit-rediseno/05-verificacion-seleccion.png" alt="Verificación en selección">
+            </section>
+            <section class="proyecto-imagen">
+              <p>Verificación de la información en consulta — En un segundo paso, se verifican y se pueden modificar los datos en la pantalla de consulta de pagos</p>
+              <img src="img/jelpit-rediseno/06-verificacion-consulta.png" alt="Verificación en consulta">
+            </section>
+          </div>
+
+          <h4>Gestión de cuentas y flexibilidad</h4>
+          <p>Se diseñaron múltiples casos de uso de acuerdo a la información recolectada: con cuentas de cobro, con cuentas equivocadas, sin cuentas de cobro, con descuentos por pronto pago, con descuentos por usuario, con cuentas agrupadas, con pagos diferenciados, etc.</p>
+
+          <div class="row-imagen">
+            <section class="proyecto-imagen">
+              <p>Pago a cuenta de cobro simple</p>
+              <img src="img/jelpit-rediseno/07-pago-simple.png" alt="Pago simple">
+            </section>
+            <section class="proyecto-imagen">
+              <p>Pago a cuenta de cobro más otro concepto</p>
+              <img src="img/jelpit-rediseno/08-mas-otro.png" alt="Pago con concepto adicional">
+            </section>
+            <section class="proyecto-imagen">
+              <p>Cuentas agrupadas más pago personalizado</p>
+              <img src="img/jelpit-rediseno/09-agrupadas.png" alt="Cuentas agrupadas">
+            </section>
+            <section class="proyecto-imagen">
+              <p>Detalle de cuentas agrupadas</p>
+              <img src="img/jelpit-rediseno/10-detalle.png" alt="Detalle cuentas agrupadas">
+            </section>
+          </div>
+
+        </section>
+
+      </div>
+
+      <div class="proyecto-quote">
+        <img src="img/comillas.png" alt="comillas" style="width: 72px;">
+        <h3>Un flujo de pago rediseñado desde la investigación hasta la arquitectura — 45% más rápido, personalizable para otros clientes y construido para escalar.</h3>
+      </div>
+
+      <div class="proyecto-cta">
+        <a href="index.html#proyectos" class="btn">← Ver todos los proyectos</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Fabio Rodríguez</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      const btn = document.getElementById('menu-btn');
+      menu.classList.toggle('abierto');
+      btn.classList.toggle('activo');
+    }
+  </script>
+
+</body>
+</html>

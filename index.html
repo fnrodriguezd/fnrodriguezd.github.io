@@ -9,27 +9,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
 </head>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    const btn = document.getElementById('menu-btn');
+    menu.classList.toggle('abierto');
+    btn.classList.toggle('activo');
+  }
+</script>
 <body>
 
   <!-- NAV -->
   <nav>
-    <span class="logo">Fabio Rodríguez.</span>
-    <ul>
-      <li><a href="#about">Acerca de mí</a></li>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Fabio Rodríguez<span class="punto">.</span></a>
+    <button class="menu-toggle" onclick="toggleMenu()" id="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="nav-menu">
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-texto">
-      <h1>Hola, soy Fabio Rodríguez<br><span>Product Designer</span></h1>
-      <p>Llevo 8 años diseñando productos digitales con foco en UX Research y narrativa. Transformo problemas complejos en experiencias simples, útiles y bien contadas.</p>
-      <a href="#proyectos" class="btn">Ver proyectos →</a>
-    </div>
-    <div class="hero-foto">
-      <img src="img/foto.png" alt="Fabio Rodríguez">
+    <div class="hero-card">
+      <div class="hero-texto">
+        <h1>Hola, soy Fabio Rodríguez<br><span>Product Designer</span></h1>
+        <p>Llevo 8 años diseñando productos digitales con foco en UX Research y narrativa. Transformo problemas complejos en experiencias simples, útiles y bien contadas.</p>
+        <a href="#proyectos" class="btn">Ver proyectos →</a>
+      </div>
+      <div class="hero-foto">
+        <img src="img/foto.png" alt="Fabio Rodríguez">
+      </div>
     </div>
   </section>
 
@@ -51,11 +68,11 @@
 
   <!-- LOGOS -->
   <section class="logos">
-    <img src="img/logo-aval.png" alt="Grupo Aval">
-    <img src="img/logo-bogota.png" alt="Banco de Bogotá">
-    <img src="img/logo-bolivar.png" alt="Servicios Bolívar">
-    <img src="img/logo-jelpit.png" alt="Jelpit">
-    <img src="img/logo-davivienda.png" alt="Davivienda">
+    <img src="img/logo-aval.png" alt="Grupo Aval" class="logo-aval">
+    <img src="img/logo-bogota.png" alt="Banco de Bogotá" class="logo-bogota">
+    <img src="img/logo-bolivar.png" alt="Servicios Bolívar" class="logo-bolivar">
+    <img src="img/logo-jelpit.png" alt="Jelpit" class="logo-jelpit">
+    <img src="img/logo-davivienda.png" alt="Davivienda" class="logo-davivienda">
   </section>
 
   <!-- PROYECTOS -->
@@ -63,18 +80,90 @@
     <h2>Proyectos seleccionados</h2>
     <p class="subtitulo-seccion">Casos de estudio de productos digitales que he diseñado e impactado</p>
     <div class="grid-proyectos">
-      <!-- Cards aquí -->
-    </div>
-  </section>
 
-  <!-- CONTACTO -->
-  <section class="contacto" id="contacto">
-    <h2>Contacto</h2>
+      <a href="breb.html" class="card-link-wrapper">
+        <div class="card">
+          <div class="card-imagen" style="background: #DBEAFE;">
+            <img src="img/proyecto-breb.png" alt="Bre-B">
+          </div>
+          <div class="card-contenido">
+            <h3>Diseño de Bre-B para los 5 bancos del Grupo Aval</h3>
+            <p>Diseñamos el flujo de Bre-B para 5 bancos del Grupo Aval — una experiencia unificada, escalable y con recuperación ante errores, en Web y App.</p>
+            <div class="pills-card">
+              <span class="pill-tag">Fintech</span>
+              <span class="pill-tag">UX/UI</span>
+              <span class="pill-tag">UX Writing</span>
+              <span class="pill-tag">Multiplataforma</span>
+            </div>
+            <span class="card-link">Ver caso de estudio →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="jelpit-opt.html" class="card-link-wrapper">
+        <div class="card">
+          <div class="card-imagen" style="background: #EDE9FE;">
+            <img src="img/proyecto-jelpit-opt.png" alt="Jelpit Optimización">
+          </div>
+          <div class="card-contenido">
+            <h3>Optimización del flujo de pago en Jelpit Conjuntos</h3>
+            <p>Rediseñamos el flujo de pago con investigación y datos continuos. Logramos x7.5 en transacciones, +100 pts NPS y -22% de fricción.</p>
+            <div class="pills-card">
+              <span class="pill-tag">SaaS</span>
+              <span class="pill-tag">UX/UI</span>
+              <span class="pill-tag">UX Research</span>
+              <span class="pill-tag">UX Writing</span>
+              <span class="pill-tag">Analítica</span>
+            </div>
+            <span class="card-link">Ver caso de estudio →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="jelpit-rediseno.html" class="card-link-wrapper">
+        <div class="card">
+          <div class="card-imagen" style="background: #F3F4F6;">
+            <img src="img/proyecto-jelpit-rediseno.png" alt="Jelpit Rediseño">
+          </div>
+          <div class="card-contenido">
+            <h3>Flujo de pagos rediseñado: -45% en tiempo y arquitectura reutilizable</h3>
+            <p>Rediseñamos el flujo de pagos de Jelpit para reducir el tiempo de pago y construir una arquitectura reutilizable para Davivienda, constructoras e inmobiliarias.</p>
+            <div class="pills-card">
+              <span class="pill-tag">SaaS</span>
+              <span class="pill-tag">UX/UI</span>
+              <span class="pill-tag">UX Research</span>
+              <span class="pill-tag">UX Writing</span>
+            </div>
+            <span class="card-link">Ver caso de estudio →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="design-system.html" class="card-link-wrapper">
+        <div class="card">
+          <div class="card-imagen" style="background: #F3F4F6;">
+            <img src="img/proyecto-design-system.png" alt="Design System">
+          </div>
+          <div class="card-contenido">
+            <h3>Design System transversal para el ecosistema digital del Grupo Bolívar</h3>
+            <p>Construimos un sistema de diseño para 4 marcas del Grupo Bolívar — consistencia, velocidad y escalabilidad en todo el ecosistema digital.</p>
+            <div class="pills-card">
+              <span class="pill-tag">Design System</span>
+              <span class="pill-tag">UX/UI</span>
+              <span class="pill-tag">Product Design</span>
+            </div>
+            <span class="card-link">Ver caso de estudio →</span>
+          </div>
+        </div>
+      </a>
+    </div>  
+
   </section>
+  
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2024 Fabio Rodríguez</p>
+    <p>© 2026 Fabio Rodríguez</p>
   </footer>
 
 </body>
