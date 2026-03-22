@@ -216,7 +216,18 @@ nav ul a:hover {
   height: 44px;
 }
 
+/* BREADCRUMB */
+.breadcrumb a {
+  color: #9CA3AF;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: var(--acento);
+}
+
 /* PROYECTOS */
+
 .proyectos {
   padding: 4rem 5%;
   max-width: 1126px;
@@ -593,6 +604,10 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+.proyecto-contenido + .resultados-wrapper {
+  margin-top: 2rem;
+}
+
 /* IMAGEN */
 .proyecto-imagen img {
   width: 100%;
@@ -729,6 +744,13 @@ footer {
   opacity: 0.75;
 }
 
+.resultados-wrapper h2 {
+  font-family: var(--fuente-titulo);
+  font-size: 24px;
+  font-weight: 500;
+  color: #1F1F1F;
+  margin-bottom: 0;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -816,6 +838,10 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: left;
+  }
+
+  .card-imagen {
+    height: 192px;
   }
 
   /* GRID PROYECTOS */
