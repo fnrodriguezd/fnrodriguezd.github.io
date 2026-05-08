@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DX7BJ5B2TN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DX7BJ5B2TN');
+  </script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Fabio Rodríguez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Fabio Rodríguez<span class="punto">.</span></a>
+      <button class="menu-toggle" onclick="toggleMenu()" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="nav-menu">
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="index.html#proyectos">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTACTO -->
+  <section class="sobre-mi">
+    <div class="sobre-mi-inner">
+
+      <div class="sobre-mi-texto">
+        <h1>Pongámonos en contacto</h1>
+        <p>Si tienes un proyecto, una oportunidad o simplemente quieres conversar sobre diseño de producto y experiencia de usuario, estaré encantado de hablar.</p>
+        <p><strong>Teléfono</strong>
+        <br>319 233 7513</p>
+        <p><strong>Correo electrónico</strong>
+        <br>fnrodriguezd@gmail.com</p>
+        <p><strong>Linkedin</strong>
+        <br><a href="https://linkedin.com/in/fnrodriguezd" target="_blank">Ir a mi perfil</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Fabio Rodríguez</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      const btn = document.getElementById('menu-btn');
+      menu.classList.toggle('abierto');
+      btn.classList.toggle('activo');
+    }
+  </script>
+
+</body>
+</html>
